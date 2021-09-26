@@ -21,7 +21,7 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'myflatrisservice'
+    azureSubscription: 'myappservice'
     appType: 'webAppLinux'
     appName: 'my-app-dotnet'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
